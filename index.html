@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Progress-Bar</title>
+  </head>
+  <body>
+    <main class="parentCont pd-10" id="parentContainer">
+      <form
+        method="post"
+        name="prgrsBarDtlsForm"
+        id="prgrsBarDtlsForm"
+        class="pd-5"
+      >
+        <div class="inputCont">
+          <div class="inputFieldsCont">
+            <label for="total">Total</label>
+            <input
+              type="number"
+              id="total"
+              placeholder="Enter total number"
+              required
+            />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="completed">Completed</label>
+            <input
+              type="number"
+              id="completed"
+              placeholder="Enter completed number"
+              required
+            />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="label">Label</label>
+            <input type="text" id="label" placeholder="Enter text" required />
+          </div>
+        </div>
+        <div class="btnCont mr-t-20">
+          <button class="secondaryButton" type="submit">Submit</button>
+          <button class="secondaryButton" type="reset" onclick="clearBtnHandler()">Clear</button>
+        </div>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
