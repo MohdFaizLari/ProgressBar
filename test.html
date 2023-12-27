@@ -1,0 +1,111 @@
+<style>
+  .count-title {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #00779a;
+  }
+  .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0.7rem;
+  }
+  .card {
+    background-color: #fff;
+    color: white;
+    padding: 0.2rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  @media (min-width: 600px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .stats-text {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+  }
+  .stats-text1 {
+    font-size: 12.5px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .stats-line-black {
+    margin: 12px auto 0;
+    width: 55px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .stats-icon {
+    font-size: 35px;
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #fff;
+  }
+
+  @media (max-width: 992px) {
+    .counter {
+      margin-bottom: 40px;
+    }
+  }
+</style>
+<head> </head>
+<body>
+  <div class="cards justify-content-center text-center">
+    <div class="card pad">
+      <div class="counter">
+        <i class="fa fa-coffee fa-2x stats-icon"></i>
+        <p class="stats-text">Patents Mined</p>
+        <div class="stats-line-black"></div>
+        <h2 class="timer count-title">
+          <span class="count-number">20,000</span>+
+        </h2>
+      </div>
+    </div>
+    <div class="card pad">
+      <div class="counter">
+        <i class="fa fa-code fa-2x stats-icon"></i>
+        <p class="stats-text">EOUs Created</p>
+        <div class="stats-line-black"></div>
+        <h2 class="timer count-title">
+          <span class="count-number">25,000</span>+
+        </h2>
+      </div>
+    </div>
+    <div class="card pad">
+      <div class="counter">
+        <i class="fa fa-clock-o fa-2x stats-icon"></i>
+        <p class="stats-text">Products Reverse Engineered</p>
+        <div class="stats-line-black"></div>
+        <h2 class="timer count-title">
+          <span class="count-number">1,000</span>+
+        </h2>
+      </div>
+    </div>
+  </div>
+</body>

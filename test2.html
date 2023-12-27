@@ -1,0 +1,97 @@
+<style>
+  .count-title {
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #00779a;
+  }
+  .cards-2 {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+  }
+  .card-2 {
+    background-color: #fff;
+    color: white;
+    padding: 0.2rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  .card-2:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+
+    box-shadow: 0 4px 8px 0 #00779a;
+  }
+  @media (min-width: 600px) {
+    .cards-2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .cards-2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .stats-heading {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 15px 15px;
+    line-height: 1.6;
+    text-align: center !important;
+    color: #000;
+    font-weight: bold;
+  }
+  .stats-para {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 15px 15px;
+    line-height: 1.6;
+    text-align: center !important;
+    color: #000;
+  }
+
+  .stats-icon {
+    font-size: 35px;
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #fff;
+  }
+
+  @media (max-width: 992px) {
+    .counter {
+      margin-bottom: 40px;
+    }
+  }
+</style>
+<head> </head>
+<body>
+  <div class="cards-2 justify-content-center text-center">
+    <div class="card-2 pad">
+      <div class="counter">
+        <p class="stats-heading">Etching and Polishing</p>
+
+        <p class="stats-para">
+          We use both wet etch and dry (plasma) etch for different layers within
+          the chip using proprietary techniques
+        </p>
+      </div>
+    </div>
+    <div class="card-2 pad">
+      <div class="counter">
+        <p class="stats-heading">Cross Sectional Imaging</p>
+        <p class="stats-para">
+          We use Optical/SEM/TEM/FIB/EDS tools to image and analyze regions of
+          interest during delayering
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
